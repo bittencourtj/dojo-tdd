@@ -41,6 +41,7 @@ nb-configuration.xml
 
 ### Gradle ###
 .gradle
+.gradle/
 build/
 
 # Ignore Gradle GUI config

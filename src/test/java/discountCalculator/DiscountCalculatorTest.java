@@ -8,7 +8,7 @@ class DiscountCalculatorTest {
 
     @Test
     void shouldReturnStringHelloWorld(){
-        String expectedValue = "Ok";
+        String expectedValue = "Hello World";
         String actual = discountCalculator.healthCheck();
 
         Assertions.assertEquals(expectedValue, actual);

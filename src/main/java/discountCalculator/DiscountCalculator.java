@@ -3,6 +3,6 @@ package discountCalculator;
 public class DiscountCalculator {
 
     public String healthCheck() {
-        return "OK!";
+        return "Hello World!";
     }
 }
