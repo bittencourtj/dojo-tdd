@@ -6,11 +6,13 @@ import org.junit.jupiter.api.Test;
 class DiscountCalculatorTest {
     DiscountCalculator discountCalculator = new DiscountCalculator();
 
-    @Test
-    void shouldReturnStringHelloWorld(){
-        String expectedValue = "Hello World";
-        String actual = discountCalculator.healthCheck();
+   @Test
+    void shouldNotGiveDiscountWhenValueIsBelowOrEquals499_99() {
+       Double expectedDiscount = 0D;
+       Double value = 350D;
 
-        Assertions.assertEquals(expectedValue, actual);
-    }
+       Double discount = discountCalculator.getDiscount(value);
+
+       Assertions.assertEquals(expectedDiscount, discount);
+   }
 }

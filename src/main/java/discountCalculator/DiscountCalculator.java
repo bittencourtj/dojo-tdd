@@ -2,7 +2,13 @@ package discountCalculator;
 
 public class DiscountCalculator {
 
-    public String healthCheck() {
-        return "Hello World!";
+
+    public Double getDiscount(double value) {
+
+        if(value <= 499.99) {
+            return 0D;
+        }
+
+        return  null;
     }
 }
